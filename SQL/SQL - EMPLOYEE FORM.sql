@@ -1,5 +1,7 @@
 CREATE DATABASE EmployeeEffortForm;
 
+--creating roles table
+
 CREATE TABLE Roles(
    RoleId int,
    RoleName varchar(50),
@@ -14,6 +16,8 @@ VALUES (2 , 'Tester');
 
 INSERT INTO Roles (RoleId,RoleName)
 VALUES (3 , 'Management');
+
+--creating employee table 
 
 CREATE TABLE Employee(
    EmpId int,
@@ -34,6 +38,8 @@ VALUES (3,226,'Vishnu',8);
 
 INSERT INTO Employee(EmpId,EmpNo,EmpName,ChargeHour)
 VALUES (4,227,'Vanitha',15);
+
+--creating Amounts table
 
 CREATE TABLE Amount(
    SI_No int,
@@ -57,6 +63,8 @@ VALUES (3,3,2,10,80);
 
 INSERT INTO Amount (SI_No,EmpId,RoleId,HourSpent,TotalAmount) 
 VALUES (4,4,3,10,150);
+
+--displaying the tables 
 
 SELECT * FROM Employee;
 SELECT * FROM Roles;
